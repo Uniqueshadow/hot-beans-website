@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses - Hot Beans Web</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <script defer src="main.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">🔥 Hot Beans Web</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#team">Team</a>
+        <a href="courses.html">Courses</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main id="root">
+    <section class="section" style="padding-top: 120px;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recommended Courses</h2>
+          <p class="section-lead">Build the skills you need to join us — or level up your career. Free and paid options curated for web developers.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters" style="text-align: center; margin: 0 0 2.5rem;">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="free">Free</button>
+          <button class="filter-btn" data-filter="paid">Paid</button>
+          <button class="filter-btn" data-filter="beginner">Beginner</button>
+          <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        </div>
+
+        <!-- Course Grid -->
+        <div class="courses-grid" id="courseList">
+
+          <!-- Course 1 -->
+          <article class="course-card" data-type="free" data-level="beginner">
+            <div class="course-header">
+              <h3>freeCodeCamp – Responsive Web Design</h3>
+              <span class="badge badge-free">Free</span>
+            </div>
+            <p class="course-meta">Beginner • ~300 hours • Certification</p>
+            <p class="course-desc">Learn HTML, CSS, Flexbox, Grid, and build 5 real projects.</p>
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Course 2 -->
+          <article class="course-card" data-type="free" data-level="beginner">
+            <div class="course-header">
+              <h3>The Odin Project – Foundations</h3>
+              <span class="badge badge-free">Free</span>
+            </div>
+            <p class="course-meta">Beginner • Self-paced • Project-based</p>
+            <p class="course-desc">Full-stack path with HTML, CSS, JavaScript, Git, and more.</p>
+            <a href="https://www.theodinproject.com/paths/foundations" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Course 3 -->
+          <article class="course-card" data-type="paid" data-level="beginner">
+            <div class="course-header">
+              <h3>Scrimba – Learn JavaScript</h3>
+              <span class="badge badge-paid">Paid (with free trial)</span>
+            </div>
+            <p class="course-meta">Beginner • Interactive • ~40 hours</p>
+            <p class="course-desc">Interactive screencasts where you can pause and edit code.</p>
+            <a href="https://scrimba.com/learn/learnjavascript" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Course 4 -->
+          <article class="course-card" data-type="paid" data-level="intermediate">
+            <div class="course-header">
+              <h3>Frontend Masters – Complete Intro to React</h3>
+              <span class="badge badge-paid">Paid</span>
+            </div>
+            <p class="course-meta">Intermediate • Video course • Projects</p>
+            <p class="course-desc">Deep dive into React, hooks, state management and best practices.</p>
+            <a href="https://frontendmasters.com/courses/react/" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Course 5 -->
+          <article class="course-card" data-type="free" data-level="intermediate">
+            <div class="course-header">
+              <h3>MDN Web Docs – JavaScript Guide</h3>
+              <span class="badge badge-free">Free</span>
+            </div>
+            <p class="course-meta">Intermediate • Reference + Tutorials</p>
+            <p class="course-desc">The most complete and up-to-date JavaScript documentation.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Course 6 -->
+          <article class="course-card" data-type="paid" data-level="beginner">
+            <div class="course-header">
+              <h3>Udemy – The Web Developer Bootcamp 2025</h3>
+              <span class="badge badge-paid">Paid (often on sale)</span>
+            </div>
+            <p class="course-meta">Beginner → Intermediate • 60+ hours</p>
+            <p class="course-desc">HTML, CSS, JS, Node.js, MongoDB, React — very popular course.</p>
+            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" class="btn btn-outline btn-small">Start Learning</a>
+          </article>
+
+          <!-- Add more courses here following the same structure -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="footer-top">
+        <div class="container">
+        <div class="footer-grid">
+            <!-- Brand Section -->
+            <div class="footer-section">
+            <h3 class="footer-logo">🔥 Hot Beans Web</h3>
+            <p class="footer-desc">Mentorship-driven web studio building careers and great software. We believe junior developers deserve better training.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn" title="LinkedIn">💼</a>
+                <a href="#" aria-label="GitHub" title="GitHub">🐙</a>
+                <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+                <a href="#" aria-label="Email" title="Email">✉️</a>
+            </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+            <h4>Quick Links</h4>
+            <nav class="footer-nav">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#team">Our Team</a>
+                <a href="courses.html">Courses</a>
+                <a href="apply.html">Apply Now</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            </div>
+
+            <!-- Resources -->
+            <div class="footer-section">
+            <h4>Resources</h4>
+            <nav class="footer-nav">
+                <a href="#">Learning Resources</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+            <h4>Get In Touch</h4>
+            <div class="footer-contact">
+                <p class="contact-item">
+                <span class="contact-label">Email:</span>
+                <a href="mailto:hello@hotbeansweb.com">hello@hotbeansweb.com</a>
+                </p>
+                <p class="contact-item">
+                <span class="contact-label">Phone:</span>
+                <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+                </p>
+                <p class="contact-item">
+                <span class="contact-label">Address:</span>
+                <span>London, United Kingdom</span>
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+        <div class="footer-bottom-content">
+            <p>© 2026 Hot Beans Web. All rights reserved.</p>
+            <p class="footer-credit">Crafted with ☕ and 🔥 by our team</p>
+        </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
